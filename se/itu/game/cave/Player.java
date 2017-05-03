@@ -47,8 +47,7 @@ public class Player /* does not extend People */ {
     }
     currentRoom.putThing(thing);
     // Get the RoomRule for the current Room and apply it
-    RoomRule rule = RuleBook.getRuleFor(currentRoom);
-    rule.apply();
+    // HERE!!!!!!!!!!!!
   }
     
   /**
@@ -96,8 +95,12 @@ public class Player /* does not extend People */ {
    * @return A String with the description of this Player's current room
    */
   public String describeCurrentRoom() {
-    RoomRule rule = RuleBook.getRuleFor(currentRoom);
-    return currentRoom.description() + "\n" + rule.creatureDescription();
+    // Get the RoomRule from RuleBook here
+    // ...
+    // Use this string to store the rule's creatureDescription!
+    String creatureDescription = "\n";
+    //// Add the rule's creatureDescription to the String at the end!!
+    return currentRoom.description() + creatureDescription; 
   }
 
   /**
