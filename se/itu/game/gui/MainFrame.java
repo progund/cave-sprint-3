@@ -194,6 +194,8 @@ public class MainFrame {
   private void updateGui() {
     updateModels();
     updateButtons();
+    // TODO: This call should be the first one!
+    // Why? Because describeCurrentRoom() now triggers the RoomRule!
     roomInfo.setText(player.describeCurrentRoom());          
   }
 
