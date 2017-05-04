@@ -20,7 +20,7 @@ Add an instance variable for storing the Room reference of the RoomRule. You may
 Add an instance variable for storing the creature description (e.g. "There's a snake here"). You may use the following UML as an inspiration:
 ```
 #creatureDescription : String
-
+```
 ### Write/finish the methods and constructor
 #### Constuctor
 For the constructor, you may use the following UML as an inspiration:
